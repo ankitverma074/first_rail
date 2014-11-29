@@ -1,9 +1,24 @@
 FirstRail::Application.routes.draw do
+
+  get "registered_users/new"
+
+root to: 'static_pages#home'
+match '/', to: 'static_pages#home'
+match '/help', to: 'static_pages#help'
+match '/about', to: 'static_pages#aboutus'
+match '/contact', to: 'static_pages#contact'
+match '/signup', to: 'registered_users#new'
   resources :microposts
 
 
   resources :users
+  get "static_pages/home"
 
+  get "static_pages/help"
+  
+  get "static_pages/aboutus"
+  
+  get "static_pages/contact"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
