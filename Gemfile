@@ -1,4 +1,4 @@
-# check comment hasan - User Id : ankitverma074 , password : Pass123
+# check comment hasan - User Id : ankitverma074 , password : Pass123456
 source 'http://rubygems.org'
 gem 'rails'
 gem 'bootstrap-sass', '~> 2.0.0'
